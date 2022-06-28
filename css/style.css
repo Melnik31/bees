@@ -1,0 +1,141 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0.3em;
+  font-size: 0.87rem;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #FFB240;
+  font-size: 3.2rem;
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  color: #272727;
+  font-size: 2rem;
+}
+
+p {
+  color: #272727;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header style */
+.header {
+  background: #151515;
+  position: relative;
+  height: 100vh;
+  /* Header Offer */
+}
+.header .honey-img {
+  position: absolute;
+  right: 0;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 2.7em;
+}
+.header .nav .link {
+  color: #FFB240;
+  font-size: 0.87rem;
+}
+.header .nav .link:hover {
+  color: #f6c780;
+}
+.header .nav .nav-links {
+  display: flex;
+  gap: 3em;
+  z-index: 3;
+}
+.header .nav .number {
+  z-index: 3;
+}
+.header .offer {
+  margin-top: 14em;
+}
+.header .offer .title {
+  padding-bottom: 0.8em;
+}
+.header .offer .btn-hero {
+  background: #FFB240;
+  padding: 1em 3.3em;
+  color: #272727;
+}
+
+/* Catalog section style */
+.catalog {
+  padding: 11em 0 11em;
+  /* Items Cards */
+}
+.catalog .catalog-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+  border-bottom: 0.7px solid #000;
+}
+.catalog .catalog-list .list-element {
+  color: #272727;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  padding-bottom: 1em;
+}
+.catalog .catalog-list .list-element:hover {
+  color: #FFB240;
+  font-size: 1.5rem;
+}
+.catalog .catalog-items-pics {
+  padding-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 29px;
+}
+.catalog .catalog-items-pics .item-card {
+  width: 270px;
+  height: 330px;
+  box-shadow: 0px 20px 50px #E5E5E5;
+  border-radius: 5px;
+}
+.catalog .catalog-items-pics .item-card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.catalog .catalog-items-pics .item-card .pic {
+  width: 100%;
+  height: 207px;
+  border-radius: 5px 5px 0 0;
+}
+.catalog .catalog-items-pics .item-card .item-text {
+  padding: 1.5em 1em;
+}
+.catalog .catalog-items-pics .item-card .item-text .price {
+  font-weight: bold;
+  padding-top: 0.5em;
+}/*# sourceMappingURL=style.css.map */

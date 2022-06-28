@@ -1,0 +1,23 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.btn{
+    border-radius: .3em;
+    font-size: 0.87rem;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+
+
+
+//Colors
+$primary: #FFB240;
+$black: #151515;
+$white: #fff;
+$text-black: #272727
+

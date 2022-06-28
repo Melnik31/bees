@@ -1,0 +1,133 @@
+@import 'config';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    color: $primary;
+    font-size: 3.2rem;
+    letter-spacing: 0.03em;
+}
+h2{
+    color: $text-black;
+    font-size: 2rem;
+}
+
+p{
+    color: $text-black;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/* Header style */
+.header{
+    background: $black;
+    position: relative;
+    height: 100vh;
+    .honey-img{
+        position: absolute;
+        right: 0;
+       
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-top: 2.7em;
+        
+        .link{
+            color: $primary;
+            font-size: .87rem;
+
+            &:hover{
+                color: #f6c780;
+            }
+        }
+
+        .nav-links{
+            display: flex;
+            gap: 3em;
+            z-index: 3;
+        }
+        .number{
+            z-index: 3;
+        }
+    }
+    /* Header Offer */
+    .offer{
+        margin-top: 14em;
+        .title{
+            padding-bottom: .8em;
+        }
+        .btn-hero{
+            background: $primary;
+            padding: 1em 3.3em;
+            color: $text-black;
+            
+        }
+    }
+}
+
+/* Catalog section style */
+.catalog{
+    padding: 11em 0 11em;
+    .catalog-list{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3em;
+        border-bottom: 0.7px solid #000;
+        .list-element{
+            color: $text-black;
+            font-size: 1.4rem;
+            transition: all .3s ease;
+            padding-bottom: 1em;
+            &:hover{
+                color: $primary;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /* Items Cards */
+    .catalog-items-pics{
+        padding-top: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 29px;
+        .item-card{
+            width: 270px;
+            height: 330px;
+            box-shadow: 0px 20px 50px #E5E5E5;
+            border-radius: 5px;
+            &:hover{
+                opacity: .8;
+                cursor: pointer;
+            }
+            .pic{
+                width: 100%;
+                height: 207px; 
+                border-radius: 5px 5px 0 0;
+            }
+            .item-text{
+                padding: 1.5em 1em;
+                .price{
+                    font-weight: bold;
+                    padding-top: 0.5em;
+                }
+            }
+        }
+    }
+}
