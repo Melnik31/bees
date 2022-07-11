@@ -21,10 +21,10 @@
             <!-- Navbar -->
             <nav class="nav">
                 <ul class="nav-links">
-                    <li class="nav-link"><a href="#" class="link">Каталог</a></li>
-                    <li class="nav-link"><a href="#" class="link">График работы</a></li>
-                    <li class="nav-link"><a href="#" class="link">Мы карте</a></li>
-                    <li class="nav-link"><a href="#" class="link">Контакты</a></li>
+                    <li class="nav-link"><a href="#catalog" class="link">Каталог</a></li>
+                    <li class="nav-link"><a href="#about" class="link">График работы</a></li>
+                    <li class="nav-link"><a href="#about" class="link">Мы карте</a></li>
+                    <li class="nav-link"><a href="#contacts" class="link">Контакты</a></li>
                 </ul>
                 <div class="number">
                     <a href="#" class="link">+375 (29) 606 50 66</a>
@@ -32,12 +32,12 @@
             </nav>
             <div class="offer">
                 <h1 class="title">Гомельское<br>Пчеловодство</h1>
-                <a href="#" class="btn btn-hero">Каталог</a>
+                <a href="#catalog" class="btn btn-hero">Каталог</a>
             </div>
         </div>
     </header>
     <!-- Catalog Section -->
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2>Каталог</h2>
             <div class="catalog-list">
@@ -78,15 +78,38 @@
                         <p class="price">24 р.</p>
                     </div>
                 </div>
-                <div class="item-card">
-                    <div class="pic-box">
-                        <img src="img/honey_drop.jpg" alt="product" class="pic">
+            </div>
+            <a href="#" class="btn btn-catalog">Все товары</a>
+        </div>
+    </section>
+    <!-- Section about -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Left box -->
+            <div class="left-box">
+                <h2 class="title">График работы</h2>
+                <div class="weeks">
+                    <div class="weeks-left">
+                        <p class="time"><span>Вт</span>: 08:00-17:00</p>
+                        <p class="time"><span>Ср</span>: 08:00-17:00</p>
+                        <p class="time"><span>Чт</span>: 08:00-17:00</p>
                     </div>
-                    <div class="item-text">
-                        <p class="item-name">Мед гречишный</p>
-                        <p class="price">24 р.</p>
+                    <div class="weeks-right">
+                        <p class="time"><span>Пт</span>: 08:00-16:00</p>
+                        <p class="time"><span>Сб</span>: 08:00-16:00</p>
+                        <p class="time-small">Перерыв: 12:00-13:00</p>
                     </div>
-                </div>
+                </div>  
+                <div class="weekends">
+                    <p class="day"><span>Вс</span>: Выходной</p>
+                    <p class="day"><span>Пн</span>: Выходной</p>
+                </div>    
+            </div>
+            <!-- Right box -->
+            <div class="right-box">
+                <h2 class="title">Мы на карте</h2>
+                <p class="address">Г. Гомель <br> ул. Крестьянская, 45 (1 этаж)</p>
+                <img src="img/map.png" alt="" class="map">
             </div>
         </div>
     </section>

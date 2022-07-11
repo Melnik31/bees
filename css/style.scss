@@ -38,8 +38,10 @@ a{
     height: 100vh;
     .honey-img{
         position: absolute;
-        right: 0;
-       
+        right: 2px;
+        .honey{
+            height: 100vh;
+        }
     }
     .nav{
         display: flex;
@@ -71,6 +73,7 @@ a{
         margin-top: 14em;
         .title{
             padding-bottom: .8em;
+            z-index: 3;
         }
         .btn-hero{
             background: $primary;
@@ -92,11 +95,11 @@ a{
         .list-element{
             color: $text-black;
             font-size: 1.4rem;
-            transition: all .3s ease;
+            transition: all .2s ease;
             padding-bottom: 1em;
             &:hover{
                 color: $primary;
-                font-size: 1.5rem;
+                //font-size: 1.5rem;
             }
         }
     }
@@ -104,14 +107,15 @@ a{
     /* Items Cards */
     .catalog-items-pics{
         padding-top: 1.5em;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-        gap: 29px;
+        margin-bottom: 2.7em;
+        display: flex;
+        justify-content: space-between;
         .item-card{
             width: 270px;
             height: 330px;
             box-shadow: 0px 20px 50px #E5E5E5;
             border-radius: 5px;
+            transition: all .2s ease;
             &:hover{
                 opacity: .8;
                 cursor: pointer;
@@ -129,5 +133,69 @@ a{
                 }
             }
         }
+    }
+
+    /* Button */
+    .btn-catalog{
+        border: solid #000;
+        color: $text-black;
+        float: right;
+        padding: 17px 35px;
+        transition: all .2s ease;
+        &:hover{
+            border-color: $primary;
+            color: $primary;
+        }
+    }
+}
+
+/* Section About style */
+
+.about{
+    padding-bottom: 11.3em;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        span{
+            color: $primary;
+        }
+        .title{
+            margin-bottom: 2em;
+            
+        }
+
+        /* Left side */
+       .weeks{
+            display: flex;
+            justify-content: space-between;
+            .time{
+                font-size: 1.2rem;
+                line-height: 1.8em;
+               
+            }
+
+            .weeks-left{
+                margin-right: 6em; ;
+            }
+            .weeks-right{
+                .time-small{
+                    font-size: 10px;
+                    float: right;
+                }
+            }
+       }
+       .weekends{
+            margin-top: 2.5em;
+            .day{
+                color: #919191;
+
+            }
+       }
+
+       /* Right side */
+       .map{
+        margin-top: 2em;
+        width: 33em;
+       }
     }
 }
