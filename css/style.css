@@ -123,7 +123,7 @@ a {
 }
 .catalog .catalog-items-pics .item-card {
   width: 270px;
-  height: 330px;
+  height: 370px;
   box-shadow: 0px 20px 50px #E5E5E5;
   border-radius: 5px;
   transition: all 0.2s ease;
@@ -134,7 +134,7 @@ a {
 }
 .catalog .catalog-items-pics .item-card .pic {
   width: 100%;
-  height: 207px;
+  height: 275px;
   border-radius: 5px 5px 0 0;
 }
 .catalog .catalog-items-pics .item-card .item-text {
@@ -158,7 +158,7 @@ a {
 
 /* Section About style */
 .about {
-  padding-bottom: 11.3em;
+  padding: 11.3em 0;
 }
 .about .container {
   display: flex;
@@ -196,4 +196,42 @@ a {
 .about .container .map {
   margin-top: 2em;
   width: 33em;
+}
+
+/* Footer */
+.footer {
+  background-color: #151515;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 136px 0;
+}
+.footer .container .title p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .container .numbers {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .information {
+  line-height: 1.5;
+}
+.footer p {
+  color: #FFB240;
+  line-height: 1.5;
+}
+.footer a {
+  color: #FFB240;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.footer a:hover {
+  color: #f6c780;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */
