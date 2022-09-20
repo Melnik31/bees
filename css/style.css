@@ -96,7 +96,7 @@ a {
 
 /* Catalog section style */
 .catalog {
-  padding: 11em 0 11em;
+  padding: 11em 0;
   /* Items Cards */
   /* Button */
 }
@@ -143,6 +143,9 @@ a {
 .catalog .catalog-items-pics .item-card .item-text .price {
   font-weight: bold;
   padding-top: 0.5em;
+}
+.catalog .button {
+  padding-bottom: 100px;
 }
 .catalog .btn-catalog {
   border: solid #000;
